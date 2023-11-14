@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,8 +20,34 @@
 
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
+    <style>
+        /* Diğer stillerinizin üstüne ekleyin */
+
+        .header-search-form {
+            margin-right: 20px; /* Mesafeyi belirleyin */
+        }
+
+        .login-btn-container {
+            display: flex;
+            align-items: center;
+            margin-left: 20px; /* Mesafeyi belirleyin */
+        }
+
+        .login-btn {
+            background-color: #808080;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    
     <!-- Header Area Start -->
     <header class="header-area">
         <div class="top-header">
@@ -201,6 +228,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">sport</a>
                                         </li>
+                                       
                                     </ul>
                                     <!-- Search Form -->
                                     <div class="header-search-form mr-auto">
@@ -212,6 +240,10 @@
                                     <!-- Search btn -->
                                     <div id="searchbtn">
                                         <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                  
+                                    <div class="login-btn-container">
+                                        <button class="login-btn">LOGIN</button>
                                     </div>
                                 </div>
                             </nav>

@@ -1,0 +1,83 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+
+
+
+    <style>
+
+
+        /* Stillerinizin üstüne ekleyin */
+
+        .login-container {
+            text-align: center;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .oauth-buttons {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+
+        .site-title {
+            font-size: 36px; /* Yazı boyutu */
+            color: #333; /* Yazı rengi */
+            font-weight: bold; /* Kalınlık */
+            margin-bottom: 20px; /* Alt boşluk */
+            text-align: center; /* Metni merkeze hizala */
+            text-transform: uppercase; /* Metni büyük harfe çevir */
+        }
+
+        .social-button i {
+            margin-right: 10px; /* İkon ile metin arasındaki boşluk */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1 class="site-title">The SiliconMade News</h1>
+        <form action="#" method="post">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="oauth-buttons">
+            <button class="social-button"><i class="fab fa-google"></i>Login with Google</button>
+            <button class="social-button"><i class="fab fa-facebook"></i>Login with Facebook</button>
+            <button class="social-button"><i class="fab fa-apple"></i>Login with Apple</button>
+        </div>
+    </div>
+
+</body>
+</html>
