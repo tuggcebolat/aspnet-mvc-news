@@ -1,4 +1,10 @@
-﻿@{
+﻿
+@{
+    Layout = null;
+}
+
+@model News.Entities.Models.RegisterViewModels
+@{
     Layout = null;
 }
 
@@ -8,8 +14,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  
+    
+
 
 
 
@@ -21,6 +27,7 @@
         .login-container {
             text-align: center;
         }
+
 
         form {
             max-width: 300px;
@@ -63,21 +70,19 @@
     </style>
 </head>
 <body>
-
+   
     <div class="login-container">
-        <h1 class="site-title">The SiliconMade News</h1>
-        <form action="#" method="post">
-            <input type="text" placeholder="Username" name="username" required>
-            <input type="password" placeholder="Password" name="password" required>
-            <button type="submit">Login</button>
+        <h1 class="site-title ">The SiliconMade News</h1>
+        <form asp-action="Register" asp-controller="Auth" method="post">
+            <input type="text" placeholder="Username" asp-for="UserName">
+            <input type="password" placeholder="Password" asp-for="Password">
+            <input type="repassword" placeholder="RePassword" asp-for="RePassword">
+            <button type="submit" class="btn btn-dark">Register</button>
         </form>
 
-        <div class="oauth-buttons">
-            <button class="social-button"><i class="fab fa-google"></i>Login with Google</button>
-            <button class="social-button"><i class="fab fa-facebook"></i>Login with Facebook</button>
-            <button class="social-button"><i class="fab fa-apple"></i>Login with Apple</button>
-        </div>
     </div>
 
 </body>
 </html>
+
+

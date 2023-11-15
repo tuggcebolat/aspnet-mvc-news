@@ -10,6 +10,28 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .logout-container {
+            text-align: center;
+        }
+
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right:auto
+        }
+    </style>
+   
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Title  -->
     <title>TheGazette - News Magazine HTML5 Template | Catagory</title>
@@ -218,6 +240,12 @@
                                     <!-- Search btn -->
                                     <div id="searchbtn">
                                         <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="logout-btn-container">
+                                        <form asp-controller="Auth" asp-action="Logout" method="get">
+                                            <button type="submit" class="logout-btn">LOGOUT</button>
+                                        </form>
+
                                     </div>
                                 </div>
                             </nav>
