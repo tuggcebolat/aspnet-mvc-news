@@ -12,14 +12,14 @@
     <title>TheGazette - News Magazine HTML5 Template | Home</title>
 
     <!-- Favicon  -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="~/img/core-img/favicon.ico">
 
     <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="~/css/core-style.css">
+    <link rel="stylesheet" href="~/css/style.css">
 
     <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="~/css/responsive.css" rel="stylesheet">
     <style>
         /* Diğer stillerinizin üstüne ekleyin */
 
@@ -175,13 +175,13 @@
                     <!-- Logo Area -->
                     <div class="col-12 col-md-4">
                         <div class="logo-area">
-                            <a href="index.html"><img src="img/core-img/logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="~/img/core-img/logo.png" alt="logo"></a>
                         </div>
                     </div>
                     <!-- Header Advert Area -->
                     <div class="col-12 col-md-8">
                         <div class="header-advert-area">
-                            <a href="#"><img src="img/bg-img/top-advert.png" alt="header-add"></a>
+                            <a href="#"><img src="~/img/bg-img/top-advert.png" alt="header-add"></a>
                         </div>
                     </div>
                 </div>
@@ -243,7 +243,10 @@
                                     </div>
                                   
                                     <div class="login-btn-container">
-                                        <button class="login-btn">LOGIN</button>
+                                        <form asp-controller="Auth" asp-action="Login" method="get">
+                                            <button type="submit" class="login-btn">LOGIN</button>
+                                        </form>
+                                        
                                     </div>
                                 </div>
                             </nav>
@@ -297,7 +300,7 @@
             </div>
         </div>
         <!-- Single Blog Post -->
-        <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(img/bg-img/2.jpg);">
+        <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(~/wwwroot/img/bg-img/2.jpg);">
             <!-- Single Blog Post Content -->
             <div class="single-blog-post-content">
                 <div class="tags">
@@ -350,7 +353,7 @@
                         <p class="gazette-post-date">March 29, 2016</p>
                         <!-- Post Thumbnail -->
                         <div class="blog-post-thumbnail my-5">
-                            <img src="img/blog-img/1.jpg" alt="post-thumb">
+                            <img src="~/img/blog-img/1.jpg" alt="post-thumb">
                         </div>
                         <!-- Post Excerpt -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend.</p>
@@ -375,7 +378,7 @@
                         <!-- Single Today Post -->
                         <div class="gazette-single-todays-post d-md-flex align-items-start mb-50">
                             <div class="todays-post-thumb">
-                                <img src="img/blog-img/2.jpg" alt="">
+                                <img src="~/img/blog-img/2.jpg" alt="">
                             </div>
                             <div class="todays-post-content">
                                 <!-- Post Tag -->
@@ -391,7 +394,7 @@
                         <!-- Single Today Post -->
                         <div class="gazette-single-todays-post d-md-flex align-items-start mb-50">
                             <div class="todays-post-thumb">
-                                <img src="img/blog-img/3.jpg" alt="">
+                                <img src="~/img/blog-img/3.jpg" alt="">
                             </div>
                             <div class="todays-post-content">
                                 <!-- Post Tag -->
@@ -416,7 +419,7 @@
                             </div>
                             <!-- Single Breaking News Widget -->
                             <div class="single-breaking-news-widget">
-                                <img src="img/blog-img/bn-1.jpg" alt="">
+                                <img src="~/img/blog-img/bn-1.jpg" alt="">
                                 <div class="breakingnews-title">
                                     <p>breaking news</p>
                                 </div>
@@ -426,7 +429,7 @@
                             </div>
                             <!-- Single Breaking News Widget -->
                             <div class="single-breaking-news-widget">
-                                <img src="img/blog-img/bn-2.jpg" alt="">
+                                <img src="~/img/blog-img/bn-2.jpg" alt="">
                                 <div class="breakingnews-title">
                                     <p>breaking news</p>
                                 </div>
@@ -444,7 +447,7 @@
                             <!-- Single Don't Miss Post -->
                             <div class="single-dont-miss-post d-flex mb-30">
                                 <div class="dont-miss-post-thumb">
-                                    <img src="img/blog-img/dm-1.jpg" alt="">
+                                    <img src="~/img/blog-img/dm-1.jpg" alt="">
                                 </div>
                                 <div class="dont-miss-post-content">
                                     <a href="#" class="font-pt">EU council reunites</a>
@@ -454,7 +457,7 @@
                             <!-- Single Don't Miss Post -->
                             <div class="single-dont-miss-post d-flex mb-30">
                                 <div class="dont-miss-post-thumb">
-                                    <img src="img/blog-img/dm-2.jpg" alt="">
+                                    <img src="~/img/blog-img/dm-2.jpg" alt="">
                                 </div>
                                 <div class="dont-miss-post-content">
                                     <a href="#" class="font-pt">A new way to travel the world</a>
@@ -464,7 +467,7 @@
                             <!-- Single Don't Miss Post -->
                             <div class="single-dont-miss-post d-flex mb-30">
                                 <div class="dont-miss-post-thumb">
-                                    <img src="img/blog-img/dm-3.jpg" alt="">
+                                    <img src="~/img/blog-img/dm-3.jpg" alt="">
                                 </div>
                                 <div class="dont-miss-post-content">
                                     <a href="#" class="font-pt">Why choose a bank?</a>
@@ -478,7 +481,7 @@
                                 <h5>Advert</h5>
                             </div>
                             <div class="advert-thumb mb-30">
-                                <a href="#"><img src="img/bg-img/add.png" alt=""></a>
+                                <a href="#"><img src="~/img/bg-img/add.png" alt=""></a>
                             </div>
                         </div>
                         <!-- Subscribe Widget -->
@@ -507,7 +510,7 @@
                         <!-- Single Catagory Post -->
                         <div class="gazette-single-catagory-post">
                             <div class="single-catagory-post-thumb mb-15">
-                                <img src="img/blog-img/12.jpg" alt="">
+                                <img src="~/img/blog-img/12.jpg" alt="">
                             </div>
                             <!-- Post Tag -->
                             <div class="gazette-post-tag">
@@ -538,7 +541,7 @@
                                 <!-- Single Catagory Post -->
                                 <div class="gazette-single-catagory-post">
                                     <div class="single-catagory-post-thumb mb-15">
-                                        <img src="img/blog-img/14.jpg" alt="">
+                                        <img src="~/img/blog-img/14.jpg" alt="">
                                     </div>
                                     <!-- Post Tag -->
                                     <div class="gazette-post-tag">
@@ -552,7 +555,7 @@
                                 <!-- Single Catagory Post -->
                                 <div class="gazette-single-catagory-post">
                                     <div class="single-catagory-post-thumb mb-15">
-                                        <img src="img/blog-img/15.jpg" alt="">
+                                        <img src="~/img/blog-img/15.jpg" alt="">
                                     </div>
                                     <!-- Post Tag -->
                                     <div class="gazette-post-tag">
@@ -566,7 +569,7 @@
                                 <!-- Single Catagory Post -->
                                 <div class="gazette-single-catagory-post">
                                     <div class="single-catagory-post-thumb mb-15">
-                                        <img src="img/blog-img/16.jpg" alt="">
+                                        <img src="~/img/blog-img/16.jpg" alt="">
                                     </div>
                                     <!-- Post Tag -->
                                     <div class="gazette-post-tag">
@@ -580,7 +583,7 @@
                                 <!-- Single Catagory Post -->
                                 <div class="gazette-single-catagory-post">
                                     <div class="single-catagory-post-thumb mb-15">
-                                        <img src="img/blog-img/17.jpg" alt="">
+                                        <img src="~/img/blog-img/17.jpg" alt="">
                                     </div>
                                     <!-- Post Tag -->
                                     <div class="gazette-post-tag">
@@ -596,7 +599,7 @@
                         <!-- Single Catagory Post -->
                         <div class="gazette-single-catagory-post">
                             <div class="single-catagory-post-thumb mb-15">
-                                <img src="img/blog-img/13.jpg" alt="">
+                                <img src="~/img/blog-img/13.jpg" alt="">
                             </div>
                             <!-- Post Tag -->
                             <div class="gazette-post-tag">
@@ -635,7 +638,7 @@
                 <div class="col-12 col-md-3">
                     <div class="single-video-post">
                         <div class="video-post-thumb">
-                            <img src="img/blog-img/4.jpg" alt="">
+                            <img src="~/img/blog-img/4.jpg" alt="">
                             <a href="https://youtu.be/dIyXl9ZHEgg" class="videobtn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                         <h5><a href="#">Show suspended by PBS amid misconduct allegations</a></h5>
@@ -645,7 +648,7 @@
                 <div class="col-12 col-md-3">
                     <div class="single-video-post">
                         <div class="video-post-thumb">
-                            <img src="img/blog-img/5.jpg" alt="">
+                            <img src="~/img/blog-img/5.jpg" alt="">
                             <a href="https://youtu.be/dIyXl9ZHEgg" class="videobtn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                         <h5><a href="#">Parents to Congress</a></h5>
@@ -655,7 +658,7 @@
                 <div class="col-12 col-md-3">
                     <div class="single-video-post">
                         <div class="video-post-thumb">
-                            <img src="img/blog-img/6.jpg" alt="">
+                            <img src="~/img/blog-img/6.jpg" alt="">
                             <a href="https://youtu.be/dIyXl9ZHEgg" class="videobtn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                         <h5><a href="#">Third Buy Alert for This “Millionaire Maker” Stock</a></h5>
@@ -665,7 +668,7 @@
                 <div class="col-12 col-md-3">
                     <div class="single-video-post">
                         <div class="video-post-thumb">
-                            <img src="img/blog-img/7.jpg" alt="">
+                            <img src="~/img/blog-img/7.jpg" alt="">
                             <a href="https://youtu.be/dIyXl9ZHEgg" class="videobtn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                         <h5><a href="#">The Chicago Mercantile Exchange is set to begin</a></h5>
@@ -675,7 +678,7 @@
                 <div class="col-12 col-md-3">
                     <div class="single-video-post">
                         <div class="video-post-thumb">
-                            <img src="img/blog-img/8.jpg" alt="">
+                            <img src="~/img/blog-img/8.jpg" alt="">
                             <a href="https://youtu.be/dIyXl9ZHEgg" class="videobtn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                         <h5><a href="#">Trading bitcoin futures</a></h5>
@@ -685,7 +688,7 @@
                 <div class="col-12 col-md-3">
                     <div class="single-video-post">
                         <div class="video-post-thumb">
-                            <img src="img/blog-img/9.jpg" alt="">
+                            <img src="~/img/blog-img/9.jpg" alt="">
                             <a href="https://youtu.be/dIyXl9ZHEgg" class="videobtn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                         <h5><a href="#">Are ‘Micro-Mansions’ the Next Big Thing?</a></h5>
@@ -695,7 +698,7 @@
                 <div class="col-12 col-md-3">
                     <div class="single-video-post">
                         <div class="video-post-thumb">
-                            <img src="img/blog-img/10.jpg" alt="">
+                            <img src="~/img/blog-img/10.jpg" alt="">
                             <a href="https://youtu.be/dIyXl9ZHEgg" class="videobtn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                         <h5><a href="#">McKinney’s target market</a></h5>
@@ -705,7 +708,7 @@
                 <div class="col-12 col-md-3">
                     <div class="single-video-post">
                         <div class="video-post-thumb">
-                            <img src="img/blog-img/11.jpg" alt="">
+                            <img src="~/img/blog-img/11.jpg" alt="">
                             <a href="https://youtu.be/dIyXl9ZHEgg" class="videobtn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                         <h5><a href="#">Australian Property Prices Remain Flat</a></h5>
@@ -728,7 +731,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-5">
                                     <div class="editorial-post-thumb">
-                                        <img src="img/blog-img/bitcoin.jpg" alt="">
+                                        <img src="~/img/blog-img/bitcoin.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-7">
@@ -750,7 +753,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-5">
                                     <div class="editorial-post-thumb">
-                                        <img src="img/blog-img/bitcoin.jpg" alt="">
+                                        <img src="~/img/blog-img/bitcoin.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-7">
@@ -772,7 +775,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-5">
                                     <div class="editorial-post-thumb">
-                                        <img src="img/blog-img/bitcoin.jpg" alt="">
+                                        <img src="~/img/blog-img/bitcoin.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-7">
@@ -794,7 +797,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-5">
                                     <div class="editorial-post-thumb">
-                                        <img src="img/blog-img/bitcoin.jpg" alt="">
+                                        <img src="~/img/blog-img/bitcoin.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-7">
@@ -945,15 +948,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- Footer Area End -->
 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="~/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
     <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
+    <script src="~/js/plugins.js"></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="~/js/active.js"></script>
 
 </body>
 </html>
