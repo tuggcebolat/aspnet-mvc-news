@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NETCore.Encrypt.Extensions;
 using News.DAL.Contexts;
@@ -10,6 +11,7 @@ using System.Security.Cryptography.Xml;
 
 namespace News.Web.Mvc.Controllers
 {
+    [Authorize]
     public class AuthController : Controller
     {
         private readonly NewsDbContext _newsDbContext;
@@ -20,12 +22,13 @@ namespace News.Web.Mvc.Controllers
             _newsDbContext = newsDbContext;
             _configuration = configuration;
         }
-
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Login(User model)
         {
@@ -62,10 +65,12 @@ namespace News.Web.Mvc.Controllers
             //}
             return RedirectToAction("Register","Auth");
         }
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View();
         }
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Register(RegisterViewModels models)
         {
