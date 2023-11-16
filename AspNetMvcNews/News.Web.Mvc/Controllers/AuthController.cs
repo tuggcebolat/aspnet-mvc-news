@@ -41,7 +41,7 @@ namespace News.Web.Mvc.Controllers
                 if (user!=null)
                 {
                     if (user.IsActive)
-                    {
+        {
                         ModelState.AddModelError(nameof(model.Name), "User is locked.");
                         return View(model);
                     }
@@ -54,7 +54,7 @@ namespace News.Web.Mvc.Controllers
                     HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,principal);
                 }
                 else
-                {
+            {
                     ModelState.AddModelError("", "Username or password is incorrect.");
                     View(model);
                 }
@@ -80,7 +80,7 @@ namespace News.Web.Mvc.Controllers
                 {
                     ModelState.AddModelError(nameof(models.UserName),"Username is already exists.");
                     View(models);
-
+      
                 }
                 string md5Salt = _configuration.GetValue<string>("AppSettings:MD5Salt");
                 string saltedPassword = models.Password + md5Salt; //string birleştirme yaptık. Login olurkende bunu kullanacağız.

@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -8,20 +7,11 @@
     Layout = null;
 }
 
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-
-
-
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
     <style>
-
-
         /* Stillerinizin üstüne ekleyin */
 
         .login-container {
@@ -66,11 +56,10 @@
         .social-button i {
             margin-right: 10px; /* İkon ile metin arasındaki boşluk */
         }
-
     </style>
 </head>
 <body>
-   
+
     <div class="login-container">
         <h1 class="site-title ">The SiliconMade News</h1>
         <form asp-action="Register" asp-controller="Auth" method="post">
@@ -79,9 +68,7 @@
             <input type="repassword" placeholder="RePassword" asp-for="RePassword">
             <button type="submit" class="btn btn-dark">Register</button>
         </form>
-
     </div>
-
 </body>
 </html>
 
