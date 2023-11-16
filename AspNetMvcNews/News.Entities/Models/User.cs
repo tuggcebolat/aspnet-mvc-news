@@ -12,3 +12,5 @@
         public ICollection<NewsComment> NewsComments { get; set; }
     }
 }
+
+//
