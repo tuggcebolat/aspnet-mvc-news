@@ -14,7 +14,6 @@ namespace News.Web.Mvc.Controllers
     [Authorize]
     public class AuthController : Controller
     {
-        //
         private readonly NewsDbContext _newsDbContext;
         private readonly IConfiguration _configuration;
 
