@@ -11,4 +11,5 @@
         public ICollection<News> News { get; set; }
         public ICollection<NewsComment> NewsComments { get; set; }
     }
+    //
 }
